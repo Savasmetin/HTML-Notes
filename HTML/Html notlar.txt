@@ -1,0 +1,113 @@
+! tab  yap genel iskelet oluşturulur 
+tab ı heryerde kullanırsın(yaz harfi veya kelimeyi bas tab a)
+ 
+head kısmı genel üst site kısmı   title sitenin adıdır 2 title arası yazarsın site adını 
+ 
+body  adı üstünde gövde  h,genel hatları burda yazıyoruz
+<h1> <h2> <h3> ...  bunlar başlık için git gide küçülür
+<p> metnin yazıldığı yerdir
+<hr> attın yerde uzun çizgi oluşturur
+<br>  bi alt satıra atar
+lorem__  boş kısma yazdığın sayı kadar kelime içeren bir  metin oluşturur
+<pre> aldığın yazıyı olduğun gibi   ekranda göstermeye yarar
+<strong> yazıyı kalınlaştırır
+<i> italik yapmaya yarar
+<mark> arkayı sarılaştırıyor
+<small> yazıyı küçültür 
+<del> üstünü çiziyor
+<ins> altını çiziyor
+<sub> alt simge metni
+<sup> üst simge metni
+width: genişlik için kullanırız
+
+<a> yazıp taba bastığında link için site ye gidebilirsin
+target "_blank " yazarsan  başka sayfada açar 
+içine title yazasan üstüne geldiğinde  ayrıyeten yazı gösterir ne yazarsan hemde
+
+<video>  bi dosyadan video açmak için kullanılır ama o dosyaya erişmek için html dosyası içine dosya klasörü aç  yükle
+controls yaz videonun içine oynatmak  için imgeler gelsin
+autoplay yazarsan  sayfa yenilendiğinde  video tekrar oynatılabilir
+<audio> yazarsan müzik oynar yukardaki komutlar aynen geçerlidir 
+
+<img> yaz taba bas içine dosya içinden erişim sağla 
+width ile genişlik ayarlayabilirsin 
+içine a yazıp linkleyip bi adrese gönderebilirsin
+
+<table> tablo yapmak için kullanılır
+<tr> herhangi bir bilgi girmek için kullanılı
+<th> tablonun başlıkları için kullanılır
+<td>oluşan tabloya  yeni bilgilere sahip insanları veya kullanıcıları kaydetmek için kullanılır
+
+aşağıdaki kod da tablonun efektif görünmesini sağlar
+border kısmı bilgiler  değiştirilebilir
+(stye head içine yazılır unutma!!!)
+<style>
+        table,tr,td{
+            border: 1px solid darkgray;
+        }
+</style>
+
+
+<ul>  bu komutla sırasız liste oluşturursun genel hattını
+<li>  ile  listeye eleman eklersin 
+elemenın elemanı için; li içinde yeni bir ul açıp onun içinde yeni bir li açarak yaparsın
+tasarım için lu içinde  type kullan nokta silebirsin
+
+<ol>   komutu  sıralı  liste oluşturmak için kullanılır
+yukarıda herşey bunu içinde geçerli 
+bunun yanında sadece rakam harf gibi sıralama var 
+ 
+<div> block oluşturur
+block yan yana konulmaz
+<span>  inline oluşturur
+inline yanyana eklenebilir
+
+bu komut ile bir block oluşturup yukarda style ile oynayarak bu block içine inline  lar açıyoruz
+
+<div class="nav">
+<span>anasayfa</span>
+<span>iletişim</span>
+<span>yazılım</span>
+</div>
+
+
+
+
+  .yazı_biçimi {
+         font-size: 25px;
+
+yukardaki  gördüğün kod bir sınıf mantığıdır birden fazla metin bulunduğunda her metinin yazı sitilini ayarlamaya çalışmak yerine
+bunu yanına yazıyorsun ve olay bitiyor 
+. üzerinde oynama olcak demek
+
+<form> yaz  ve arasına yazmak için bu önemli
+
+<label for="isim">adınız  soyadınızı yazın</label>
+<br>
+<input type="text" id="isim" placeholder="ornek: savas metinoğlu" >
+
+tek seçimli bir cinsite seçimi   :)
+
+<h4>cinsiyet seçiniz</h4>
+Kadın
+<input type="radio" name="cinsiyet" id="kadın" >
+Erkek
+<input type="radio" name="cinsiyet" id="erkek" >
+belirtmek istemiyorum
+<input type="radio" name="cinsiyet" id="belirsiz" >
+<hr>
+
+
+
+
+bir sürü seçenegin çıktığı bir  eğitim seçme kodu
+
+
+<h4>eğitim durumu</h4>
+<select name="EgitimDurumu" id="egitimdurumu">
+    <option value="ilkokul">ilkokul</option>
+    <option value="ortaokul">ortaokul</option>
+    <option value="lise">lise</option>
+    <option value="lisans">lisans</option>
+    <option value="yükseklisans"> yuksek lisans</option>
+    <option value="ön lisans">ön  lisans</option>
